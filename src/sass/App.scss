@@ -1,0 +1,71 @@
+//main font stack
+$font-stack: Avenir,-apple-system,BlinkMacSystemFont,SegoeUI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,HelveticaNeue,sans-serif;
+
+//font sizes
+$font-initial: 24px;
+
+//main Coolors
+$colour-platinum: #DAE3E5;
+$colour-eerieBlack: #1E1D1C;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack;
+  font-size: $font-initial;
+  background-color: $colour-platinum;
+}
+
+.App {
+  background: white;
+  border-radius: 2px;
+  margin: 1rem auto;
+  position: relative;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  z-index: 0;
+  min-height: 800px;
+  height: 95vh;
+
+  /* when screen shrinks below 760, make things a bit more mobile-friendly */
+  @media screen and (max-width : 768px) {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+.header {
+  flex: 1;
+  margin: 1px;
+  padding: 50px 50px 50px 50px;
+  font-size: 2em;
+  font-weight: bold;
+  @media screen and (max-width : 768px) {
+    font-size: 1em;
+  }
+}
+
+.piano {
+  flex: 2;
+  display: flex;
+  margin: 0 auto;
+  //animation:  spin 2s infinite linear;
+  //-webkit-animation: spin 2s infinite linear;
+}
+
+.key {
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
