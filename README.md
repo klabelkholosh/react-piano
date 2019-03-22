@@ -10,4 +10,4 @@ It attempts to shrink/grow somewhat to screen size.
 
 Still a work-in-progress :) Feel free to modify as you like! 
 
-Animations and demo page coming next.
+Animations coming next.
